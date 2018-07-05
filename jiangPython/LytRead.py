@@ -18,7 +18,7 @@ def read_excel(readUrl, writeUrl, date):
     countEcr = 0
     countHwr = 0
     for x in range(sheet1.nrows):
-        if x == 103:
+        if x == sheet1.nrows - 1:
             break
         data = sheet1.cell(x+1, 1).value
         if 'ECR' in data :
